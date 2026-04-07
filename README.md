@@ -2,7 +2,6 @@
 
 **Qryo** é uma ferramenta premium de personalização de QR Codes, focada em design, identidade visual e produtividade. Transforme códigos genéricos em peças de marca visualmente atraentes com uma interface neumórfica moderna e recursos avançados.
 
-![Qryo Preview](https://picsum.photos/seed/qryo/1200/600)
 
 ## ✨ Recursos Principais
 
@@ -24,50 +23,3 @@
 - **Backend/Infra:** [Firebase](https://firebase.google.com/) (Auth, Firestore, Remote Config)
 - **Utilidades:** [JSZip](https://stuk.github.io/jszip/) (para compressão de lotes)
 
-## 📦 Instalação e Execução
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/qryo.git
-   cd qryo
-   ```
-
-2. **Instale as dependências:**
-   ```bash
-   npm install
-   ```
-
-3. **Configure o Firebase:**
-   - Crie um projeto no [Firebase Console](https://console.firebase.google.com/).
-   - Adicione um App Web e copie as credenciais.
-   - Crie um arquivo `firebase-applet-config.json` na raiz com o seguinte formato:
-     ```json
-     {
-       "apiKey": "SUA_API_KEY",
-       "authDomain": "SEU_AUTH_DOMAIN",
-       "projectId": "SEU_PROJECT_ID",
-       "appId": "SEU_APP_ID",
-       "firestoreDatabaseId": "(default)"
-     }
-     ```
-
-4. **Inicie o servidor de desenvolvimento:**
-   ```bash
-   npm run dev
-   ```
-   O app estará disponível em `http://localhost:3000`.
-
-## 🛠️ Estrutura do Projeto
-
-- `/src/components`: Componentes de UI (Layout, QR, UI Elements).
-- `/src/context`: Provedores de estado global (Auth, Theme, RemoteConfig).
-- `/src/hooks`: Lógica customizada para estilização de QR e gerenciamento de presets.
-- `/src/firebase.ts`: Configuração e inicialização dos serviços Firebase.
-- `firestore.rules`: Regras de segurança para o banco de dados.
-
-## 📄 Licença
-
-Este projeto está sob a licença Apache-2.0. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-Desenvolvido com ❤️ para marcas que valorizam cada pixel.
